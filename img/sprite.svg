@@ -1,0 +1,17 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13" id="basket">
+    <path d="M3.41797 3L3.78059 1H7.89034L8.25297 3" stroke="#8E43ED" stroke-width="1.33333" stroke-linejoin="round"></path>
+    <path d="M1 3H10.67" stroke="#8E43ED" stroke-width="1.33333" stroke-linecap="round"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0657 3L9.15918 12.3333H2.51105L1.60449 3H10.0657Z" stroke="#8E43ED" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 45" id="logo">
+    <path d="M56.0449 22.1573C56.0449 9.92185 46.2502 -4.28139e-07 34.1716 -9.56114e-07C22.0929 -1.48409e-06 12.2982 9.92184 12.2982 22.1573L-2.76714e-05 22.1573C-2.76714e-05 22.1573 7.77423 44.3146 34.1716 44.3146C46.2502 44.3146 56.0449 34.3928 56.0449 22.1573ZM34.1716 14.8605C38.1246 14.8605 41.3748 18.1085 41.3748 22.1573C41.3748 26.1616 38.1685 29.4541 34.1716 29.4541C30.2186 29.4541 26.9683 26.2061 26.9683 22.1573C26.9683 18.153 30.2186 14.8605 34.1716 14.8605Z" fill="#EF5DA8"></path>
+    <path d="M59.9551 22.1573C59.9551 34.3928 69.7498 44.3146 81.8284 44.3146C93.9071 44.3146 103.702 34.3928 103.702 22.1573L116 22.1573C116 22.1573 108.226 2.34638e-05 81.8284 2.3149e-05C69.7498 2.3005e-05 59.9551 9.92187 59.9551 22.1573ZM81.8284 29.4541C77.8754 29.4541 74.6252 26.2062 74.6252 22.1573C74.6252 18.153 77.8315 14.8605 81.8284 14.8605C85.7814 14.8605 89.0317 18.1085 89.0317 22.1573C89.0317 26.1617 85.7814 29.4541 81.8284 29.4541Z" fill="#8E43ED"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7" id="arrow">
+    <path d="M1 1L6 6L11 1" stroke="#8E43ED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 11" id="check">
+    <path d="M14.3394 1.07544L5.15999 9.52827L1.66016 5.90563" stroke="#3DD73A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "name": "test-main",
+  "version": "1.0.0",
+  "description": "test for ilink academ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "keywords": [],
+  "author": "Konstantin",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.3.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0"
+  }
+}

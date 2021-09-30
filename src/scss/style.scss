@@ -1,0 +1,681 @@
+$purple:#8E43ED;
+$light-purple:#AA7ECD;
+
+$white:#fff;
+$bg-color:#F8F3FF;
+$black:#000;
+$light-black:#303030;
+
+$mobile: 568px;
+$tablet: 968px;
+$desktop: 1440px;
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    @media screen and (max-width: $desktop) {
+        width: 100%;
+    }
+}
+.page-bgcolor{
+    background-color: $bg-color;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &.documents, &.position{
+        visibility: hidden;
+        &.visible{
+            visibility: visible;
+        }
+    }
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 176px 0 64px;
+    height: 96px;
+    &-logo{
+        width: 116px;
+        height: 44.31px;
+        @media screen and (max-width: $mobile) {
+            width: 78px;
+            height: 29.8px;
+        }
+    }
+    &-icon{
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width: $desktop) {
+        padding: 0 20px;
+    }
+    @media screen and (max-width: $mobile) {
+        padding: 0px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.nav{
+    display: flex;
+    margin:0px;
+    list-style: none;
+    padding-left: 0;
+    &-item{
+        margin-left:32px;
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+    }
+    &-link{
+        font-size: 16px;
+        text-decoration: none;
+        color: $purple;
+        font-weight: 500;
+    }
+}
+.about{
+    display: flex;
+    padding: 100px 176px 100px 64px;
+    background-color: $white;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url("/img/Vector4.png"); 
+        width: 337px;
+        height: 259px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        @media screen and (max-width: $mobile) {
+            content: none;
+        }
+    }
+    &::after{
+        content: "";
+        background-image: url("/img/Vector4.png"); 
+        width: 337px;
+        height: 259px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 4;
+        transform: rotate(-180deg);
+        @media screen and (max-width: $mobile) {
+            content: none;
+        }
+    }
+    &-description{
+        margin: 44px 0 0 32px;
+        @media screen and (max-width: $mobile) {
+            margin: 24px 0 0 0px;
+        }
+    }
+    &-image{
+        width: auto;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -57.39px;
+            bottom: -54.89px;
+            background-image: url("/img/Rectangles3.png");
+            width: 169.26px;
+            height: 249.65px;
+            @media screen and (max-width: $mobile) {
+                content: "";
+                background-image: url("/img/Rectangles\ 4.png");
+                background-repeat: no-repeat;
+                top: auto;
+                bottom: -23px;
+                right: 0px;
+                left: auto;
+                width: 79.26px;
+                height: 116.91px;
+                background-size: contain;
+            }
+        }
+        & img {
+            @media screen and (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: $tablet) {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 20px;
+    }
+    @media screen and (max-width: $mobile) {
+        padding: 24px 13px 58px 14px ;
+    }
+}
+.description{
+    &-title{
+        color: $light-black;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 72px;
+        @media screen and (max-width: $mobile) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    &-subtitle{
+        margin-top: 64px;
+        color: $light-black;
+        font-weight: 800;
+        font-size: 27px;
+        line-height: 36px;
+        @media screen and (max-width: $mobile) {
+            margin-top: 32px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    &-text{
+        margin-top: 24px;
+        max-width: 640px;
+        @media screen and (max-width: $mobile) {
+            margin-top: 16px;
+        }
+    }
+    &-text p{
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+        @media screen and (max-width: $mobile) {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
+.information{
+    margin-top: 24px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    @media screen and (max-width: $mobile) {
+        display: block;
+    }
+    &-item{
+        margin-right: 32px;
+        @media screen and (max-width: $mobile) {
+            margin-right: 39px;
+            display: inline-block;
+        }
+    }
+    &-link{
+        color: $light-purple;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        @media screen and (max-width: $mobile) {
+            font-size: 14px;
+            line-height: 18px;
+            display: block;
+            margin-bottom: 4px;
+        }
+    }
+    &-text{
+        margin-left: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: $light-black;
+        @media screen and (max-width: $mobile) {
+            margin: 0;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+.yourself{
+    position: relative;
+    background-image: url("/img/Rectangles\ 2.png") ; 
+    background-repeat: no-repeat;
+    &::before{
+        content: "";
+        background-image: url("/img/Rectangles\ 1.png"); 
+        width: 480px;
+        height: 750px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media screen and (max-width: $desktop) {
+            content: none;
+        }
+        @media screen and (max-width: $mobile) {
+            content: "";
+            background-image: url("/img/Rectangles3.png"); 
+            width: 79.26px;
+            height: 116.91px;
+            transform: matrix(0.87, 0.5, 0.5, -0.87, 0, 0);
+            background-size: contain;
+            top: 12px;
+            right: 25px;
+        }
+    }
+    padding: 56px 0px 48px 64px;
+    &-title{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 72px;
+        color: $light-black;
+        margin-bottom: 40px;
+        @media screen and (max-width: $mobile) {
+            font-size: 32px;
+            line-height: 41px;
+        }
+    }
+    @media screen and (max-width: $mobile) {
+        padding: 40px 13px 16px 14px ;
+    }
+}
+.form{
+    &-item{
+        margin-right: 32px;
+        margin-bottom: 40px;
+        & .select-wrapper{
+            position: relative;
+            & .field-icon{
+                position: absolute;
+                width: 12px;
+                height: 6px;
+                top: 50%;
+                transform: translate(0, -50%);
+                right: 25px;
+            }
+        }
+        &.file {
+            width: 100%;
+            margin-top: 16px;
+            margin-bottom:48px;
+            @media screen and (max-width: $mobile) {
+                margin-top: 0px;
+                margin-bottom: 40px;
+            }
+        }
+        & .loaded-file{
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            background: $white;
+            border: 1px solid #D9BBFF;
+            border-radius: 12px;
+            width: 256px;
+            height: 56px;
+            margin-top: 8px;
+            padding-left: 12px;
+            position: relative;
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+            }
+            &.visible{
+                visibility: visible;
+            }
+            & #loaded-image{
+                width: 100%;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+            & .loaded-text{
+                margin-left: 8px;
+                & .text-name{
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: $light-black;
+                }
+                & .text-size{
+                    color: #AFAFAF;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            & .delete-icon{
+                position: absolute;
+                top: 22px;
+                right: 16.33px;
+                width: 9.67px;
+                height: 11.33px;
+            }
+        }
+        & .file-wrapper{
+            width: 100%;
+            max-width: 976px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            background: $white;
+            border: 1px dashed #D9BBFF;
+            border-radius: 12px;
+            @media screen and (max-width: $mobile) {
+                flex-wrap: wrap;
+                padding: 27.5px 0;
+                text-align: center;
+            }
+        }
+        & .file-label{
+            color: #9993BD;
+            letter-spacing: 0.03em;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        & .file-button{
+            &:hover{
+                background: #FAF8FE;
+            }
+            &:active{
+                background: #F0E5FE;
+            }
+            margin-left: 16px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            height: 56px;
+            width: 211px;
+            justify-content: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $purple;
+            border-radius: 12px;
+            background: $white;
+            border: 1px solid $purple;
+            @media screen and (max-width: $mobile) {
+                margin-top: 16px;
+            }
+            & .file-input{
+                z-index: 2;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+            }
+        }
+        @media screen and (max-width: $desktop) {
+            width: calc(50% - 64px);
+        }
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            margin-right: 0px;
+            margin-top: 0px;
+        }
+    }
+    &-button{
+        &:disabled{
+            background: #DED9E4;
+            pointer-events: none;
+        }
+        &:hover{
+            background: #6813D3;
+        }
+        &:active{
+            background-color: #500AA9;
+        }
+        background: $purple;
+        border-radius: 12px;
+        color: $white;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        height: 56px;
+        width: 212px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+        }
+    }
+    & .send-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $mobile) {
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        & .form-submit{
+            visibility: hidden;
+            display: flex;
+            align-items: center;
+            &.visible{
+                visibility: visible;
+            }
+        }
+        & .send-text{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: $light-black;
+            margin-left: 8px;
+        }
+    }
+    & .wrapper-check{
+        width: 32px;
+        height: 32px;
+        background: #E1FEE8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 24px;
+        & .check-icon{
+            width: 12.68px;
+            height: 8.45px;
+        }
+    }
+    &-text{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+    &-field{
+        &.warning{
+            border-color: red;
+        }
+        &.field-date{
+            position: relative;
+            & #date{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-radius: 12px;
+                border: none;
+                padding-left: 16px;
+                padding-right: 16px;
+                font-size: 16px;
+                line-height: 24px;
+                color: #9F9F9F;
+                outline: none;
+                // opacity: 0;
+            }
+        }
+        background: #FFFFFF;
+        border: 1px solid $purple;
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        height: 56px;
+        width: 304px;
+        padding: 16px;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        @media screen and (max-width: $desktop) {
+            width: 100%;
+        }
+        @media screen and (max-width: $mobile) {
+            padding: 16px 0 16px 13.38px;
+        }
+    }
+}
+.slider{
+    padding: 56px 64px;
+    background-color: $white;
+    position: relative;
+    @media screen and (max-width: $mobile) {
+        padding: 32px 13px 32px 16px;
+    }
+    &-container{
+        overflow: hidden;
+    }
+    &-wrapper{
+        position: relative;
+        border-radius: 32px;
+        overflow: hidden;
+    }
+    &-buttons{
+        text-align: center;
+    }
+    &-slide{
+        animation-name: fade;
+        animation-duration: 1.5s; 
+        display: none;
+    }
+    &-buttons{
+        &-next{
+            background-image: url('/img/brnnext.png');
+            right: 32px;
+            cursor: pointer;
+            position: absolute;
+            background-repeat: no-repeat;
+            height: 35px;
+            width: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+            @media screen and (max-width: $mobile) {
+                transform:none;
+                bottom:40px;
+                top: auto;
+                height: 28px;
+                width: 15px;
+                background-size: cover;
+            }
+        }
+        &-prev{
+            background-image: url('/img//btnprev.png');
+            left: 32px;
+            cursor: pointer;
+            position: absolute;
+            background-repeat: no-repeat;
+            height: 35px;
+            width: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+            @media screen and (max-width: $mobile) {
+                transform:none;
+                bottom:40px;
+                top: auto;
+                height: 28px;
+                width: 15px;
+                background-size: cover;
+            }
+        }
+    }
+}
+.slide{
+    &-info{
+        position: absolute;
+        top: 197px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        @media screen and (max-width: $mobile) {
+            top: 170px;
+            width: 254px;
+        }
+    }
+    &-image{
+        object-fit: cover;
+        width: 100%;
+        @media screen and (max-width: $desktop) {
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+.info{
+    &-subtitle{
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 72px;
+        color: $white;
+        margin-bottom: 16px;
+        @media screen and (max-width: $mobile) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    &-text{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+        color: $white;
+        @media screen and (max-width: $mobile) {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
+.pagination{
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    &-bullet{
+        width: 12px;
+        height: 12px;
+        outline: 0;
+        margin-right: 12px;
+        cursor: pointer;
+        border-radius: 100%;
+        border: 2px solid $white; 
+        &.active {
+            background: $white;
+        } 
+    }
+    @media screen and (max-width: $mobile) {
+        bottom: 43px;
+    }
+}
+.active{display: block;}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
